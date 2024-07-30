@@ -8,7 +8,7 @@
     <link rel="icon" href="./img/logo/logosmall-02.svg">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./stylesheets/all.css">
-    <script src="../anime/javascripts/vendor.js"></script>
+    <script src="./javascripts/vendor.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <style>
@@ -81,6 +81,15 @@
             background: #ECAD39;
             border: #ECAD39 solid 1px;
         }
+        .comments_user{
+            text-decoration: underline;
+        }
+        .comments_text {
+            font-weight: lighter;
+        }
+        hr{
+            border-color: #D9D9D9;
+        }
     </style>
 </head>
 
@@ -106,20 +115,21 @@
                     </div>
                     <div class="d-flex flex-column py-5 px-5 " style="height: 100%;">
                         <div v-if="selectedShow.state1" class="ps-5">
-                            <h6>pingagogo</h4>
-                                <h5>{{selectedShow.state1}}</h3>
+                            <h6 class="comments_user">pingagogo</h4>
+                                <h5 class="comments_text">{{selectedShow.state1}}</h3>
+                                    <hr>
                         </div>
                         <div v-if="selectedShow.state2" class="">
-                            <h6>wendy24</h4>
-                                <h5>{{selectedShow.state2}}</h3>
+                            <h6 class="comments_user">wendy24</h4>
+                                <h5 class="comments_text">{{selectedShow.state2}}</h3>
                         </div>
                         <div v-if="selectedShow.state3" class="">
-                            <h6>cindy969</h4>
-                                <h5>{{selectedShow.state3}}</h3>
+                            <h6 class="comments_user">cindy969</h4>
+                                <h5 class="comments_text">{{selectedShow.state3}}</h3>
                         </div>
                         <div v-if="selectedShow.state4" class="">
-                            <h6>7777amy</h4>
-                                <h5>{{selectedShow.state4}}</h3>
+                            <h6 class="comments_user">7777amy</h4>
+                                <h5 class="comments_text">{{selectedShow.state4}}</h3>
                         </div>
                     </div>
                 </div>
